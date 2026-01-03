@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
     </head>
-<body style="background-image: url('Berta Photo/C1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; text-align: center; color: beige;">
+<body style="background-image: url('Berta Photo/C1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; text-align: center; color: beige; text-shadow: 2px 2px 4px #000;">
 </body>
     <!--Шапка-->
     <header>
@@ -22,6 +22,8 @@
         <a href="#gallery">Галерея</a>
         <a href="#video">Відео</a>
     </nav>
+
+    <audio id="berta-sound" src="purr.mp3"></audio>
 
     <!--Основний контент-->
     <details id="about">
@@ -51,7 +53,7 @@
             <li>Собаки</li>
             <li>Мухи</li>
         </ul>
-        <button>Погладити Берту</button>
+        <button onclick="document.getElementById('berta-sound').play()">Погладити Берту</button>
     </details>
 
     <!--Галерея-->
@@ -91,6 +93,5 @@
     </div>
     </details>
 
-    <!--Відео-->
 
     
