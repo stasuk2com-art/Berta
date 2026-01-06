@@ -9,7 +9,7 @@
 <link rel="manifest" href="site.webmanifest" />
 <link rel="stylesheet" href="style.css">
     </head>
-<body style="background-image: url('Berta Photo/C1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; text-align: center; color: beige; text-shadow: 2px 2px 4px #000; font-size: 20px;">
+<body style="background-image: url('Berta Photo/C1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; text-align: center; color: beige; text-shadow: 2px 2px 4px #000; font-size: 25px;">
 </body>
     <!--Шапка-->
     <header>
@@ -17,12 +17,10 @@
         <p>Персональний сайт Берти Василівни</p>
     </header>
     <!--Меню-->
-    <nav>
-        <a href="pages/contact.html"
-        class="cat-button">Контакти</a>
-        <a href="pages/video.html"
-        class="cat-button">Відео</a>
-    </nav>
+<nav style="text-align: center; margin-top: 20px;">
+    <a href="pages/contact.html" class="cat-button">Контакти</a>
+    <a href="pages/video.html" class="cat-button">Відео</a>
+</nav>
 
     <audio id="berta-sound" src="purr.mp3.mp3"></audio>
 
@@ -54,7 +52,10 @@
             <li>Собаки</li>
             <li>Мухи</li>
         </ul>
-        <button onclick="document.getElementById('berta-sound').play()">Погладити Берту</button>
+<button class="cat-button"
+        onclick="document.getElementById('berta-sound').play(); alert('Мррр... Берта задоволена!')">
+        Погладити Берту
+</button>
     </details>
 
     <!--Галерея-->
