@@ -1,0 +1,18 @@
+.cat-button {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px; /* Закруглені краї */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавність анімації */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cat-button:hover {
+    transform: scale(1.1); /* Збільшення при наведенні */
+    background: linear-gradient(45deg, #fad0c4 0%, #ff9a9e 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
