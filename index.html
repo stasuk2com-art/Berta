@@ -13,7 +13,8 @@
 </body>
     <!--Шапка-->
     <header>
-        <h1>Берта Василівна</h1>
+        <div id="content">
+        <h1 id="top">Берта Василівна</h1>
         <p>Персональний сайт Берти Василівни</p>
     </header>
     <!--Меню-->
@@ -23,6 +24,8 @@
 </nav>
 
     <audio id="berta-sound" src="purr.mp3.mp3"></audio>
+     
+
 
     <!--Основний контент-->
     <details id="about">
@@ -94,6 +97,27 @@
         <p>Корм закінчився</p>
     </div>
     </details>
-
-
+</div>
+<button id="magic-btn" 
+        style="background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; padding: 12px 25px; border-radius: 30px; cursor: pointer; border: none; font-weight: bold; margin: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: 0.4s;" 
+        onclick="
+            let content = document.getElementById('content');
+            let title = document.querySelector('h1');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                document.body.style.backgroundImage = 'url(\'Berta Photo/C1.jpg\')';
+                title.style.color = ''; 
+                this.innerText = 'Магічний фокус';
+            } else {
+                content.style.display = 'none';
+                document.body.style.backgroundImage = 'url(\'Berta Photo/C2.jpg\')';
+                document.body.style.backgroundSize = 'cover';
+                title.style.color = 'white'; 
+                this.innerText = 'Повернути все назад';
+                alert('Тепер ти бачиш справжню Берту!');
+            }
+        ">
+    Магічний фокус
+</button>
     
